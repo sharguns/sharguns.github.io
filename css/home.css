@@ -1,9 +1,9 @@
 @import('config.css');
 
 /*global elements*/
-/*	QUESTION: why is the background color not changing?*/
+	
 	body{
-		background-color: #F4F1FF;
+		background-color: white;
 		/*font-family: 'Roboto', sans-serif;*/
 		font-family: 'Oswald', sans-serif;
 		font-size: 30px;
@@ -29,242 +29,304 @@
     	height: 30px;
     	display: block;
 	}
-
-	nav li a {	
-    	width: 60px;
+	nav a{
+		text-align: center;
+		float: none;
+    	margin: 0 auto;
+    	font-family: 'Oswald', sans-serif;
+    	font: gray bold 3px;
+    	text-align: center;
 	}
 
 /*	QUESTION: why is the footer separated from the text?
 */	/*footer styling*/
 	footer{
-		border: white 1px solid;
-		background:#d3d3d3;
-		height: 100px;
-		line-height: 100px;
+		font: gray 30px bold;
+		line-height: 30px;
 		text-align: center;
-		font: black 30px;
+		text-transform: uppercase;
+/*		background: #d3d3d3;*/
+		height: 40px;
+		font-family: 'Oswald', sans-serif;
 	}
 
+	footer span{
+		font-style: oblique;
+		color: teal;
+	}
+
+
+/*--------------------------------*/
 /*home-page specific*/
 
-#homepage-body-container{
-	margin: 20px;
-	font-family: 'Oswald', sans-serif;
-}
+	#homepage-body-container{
+		margin: 10px;
+		font-family: 'Oswald', sans-serif;
+/*		background-color: #89B0AE;
+		background-color: gradient;	*/
+/*		background-image: url("../images/background2.jpg")
+		background-size: cover;*/
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8cc2ba+60,ffffff+100 */
+		background: #8cc2ba; /* Old browsers */
+		background: -moz-linear-gradient(-45deg, #8cc2ba 60%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg, #8cc2ba 60%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg, #8cc2ba 60%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc2ba', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	#homepage-body-container h1{
+		font-family: 'Oswald', sans-serif;
+		font-size: 55px;
+		line-height: 100%;
+		font-weight: bolder;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		text-shadow: 0 3px 3px grey;
+		color: black;
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.line {
+		width:90px;
+		height:4px;
+		margin: auto 0;
+		background: #D94086;
+		float: none;
+    	margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	
+	#homepage-body-container h2{
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+		line-height: 120%;
+		font-weight: bolder;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: teal;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
 
-/*QUESTION: this is not inhereting styling*/
-#homepage-body-container h1{
-	font-size: 40px;
-	color: black;
-	line-height: 40px;
-	text-align: center;
-	padding-bottom: 10px;
-	font-family: 'Oswald', sans-serif;
-}
-
-#homepage-body-container h2{
-	font-size: 30px;
-	color: gray;
-	font-style: lighter;
-	line-height: 30px;
-	text-align: center;
-	padding-bottom: 10px;
-	font-family: 'Oswald', sans-serif;
-}
-
-/*overall drop-down menu styling begins here*/
-
+/*---------------------------*/
 /*div styling for the container of the selector*/
-#location-selectors{
-	font-weight: bold;
-	/*	transition: margin 1s;*/
-	/*	margin: auto 0;*/
+	#location-selectors{
+		height: 750px;
+		display: block;
+	}
 
-}
+	/*div styling for the location selector boxes*/
+	.location{
+		font-size: 30px;
+		height: 250px;
+		padding-top: 50px;
+		text-align: center;
+		border: white 4px solid;
+		display: block;
+	/*	transition: background-image 1s;*/
+	}
 
-/*div styling for the location selector boxes*/
-.location{
-	font-size: 30px;
-	background-color: teal;
-	height: 250px;
-	padding: auto auto;
-	padding-top: 40px;
-	text-align: center;
-	border: white 3px solid;
-	transition: background-image 1s;
-}
+	/*city name styling*/
+	.location h3{
+		color: white;
+		font-size: 28px;
+	/*	position: absolute;
+		z-index: 1;*/
+	}
 
-/*city styling*/
-.location h3{
-	color: white;
-	font-size: 30px;
-	position: relative;
-}
+	/*country name styling*/
+	.location h4{
+		color: #D94086;
+		font-size: 18px;
+		font-weight: bold;
+/*		position: absolute;*/
+/*		z-index: 1;*/
+	}
 
-/*country styling*/
-.location h4{
-	color: #D94086;
-	font-size: 18px;
-	position: relative;
-}
+	/*quip of location styling*/
+	.location p{
+		color: white;
+		font-weight: lighter;
+		font-size: 18px;
+/*		position: absolute;*/
+/*		z-index: 1;*/
+	}
 
-/*quip styling*/
-.location p{
-	color: white;
-	font-weight: lighter;
-	font-size: 18px;
-	position: relative;
-}
-
-.location:hover{
-	opacity: 0.9;
-}
+	.location:hover{
+		opacity: 0.8;
+	}
 
 /*div styling for the individual location selector boxes*/
 
-.first{
-	background-image: url("../images/tulum/tulum_cenote.jpg");
-	background-size: bottom;	
-	display: block;
-	position: absolute;
-}
+	.first{
+		background-image: url("../images/tulum/tulum_cenote.jpg");
+		background-position: bottom;	
+/*		z-index: -1;
+		position: relative;*/
+	}
 
-.gradient-overlay{
-	z-index:0;
-	width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    background: black;
-}
+	.second{
+		background-image: url("../images/hoi_an/hoi_an_lanterns.jpg");	
+		background-size: cover;	
+	}
+	.third{
+		background-image: url("../images/kerala/kerala_waterways.jpg");
+		background-size: cover;	
+	}
 
-.second{
-	background-image: url("../images/hoi_an/hoi_an_lanterns.jpg");	
-	background-size: cover;	
-}
-.third{
-	background-image: url("../images/kerala/kerala_waterways.jpg");
-	background-size: cover;	
-}
+	.fourth{
+		background-image: url("../images/siem_reap/siem_reap_ankor_temple.jpg");
+		background-size: cover;	
+	}
 
-.fourth{
-	background-image: url("../images/siem_reap/siem_reap_ankor_temple.jpg");
-	background-size: cover;	
-}
+	.fifth{
+		background-image: url("../images/hawaii/hawaii_waipio-valley.jpg");
+		background-position: right;	
+	}
 
-.fifth{
-	background-image: url("../images/siem_reap/siem_reap_ankor_temple.jpg");
-	background-size: cover;	
-}
+	.sixth{
+		background-image: url("../images/nyc/nyc_westvillagestoop.jpg");	
+		background-size: cover;	
+	}	
+	.seventh{
+		background-image: url("../images/lagos/lagos_cliffs.jpg");	
+		background-size: cover;	
+	}
 
-.sixth{
-	background-image: url("../images/hoi_an/hoi_an_lanterns.jpg");	
-	background-size: cover;	
-}	
-.seventh{
-	background-image: url("../images/hoi_an/hoi_an_lanterns.jpg");	
-	background-size: cover;	
-}
+	.eighth{
+		background-image: url("../images/barbados/barbados_vantage.jpg");	
+		background-size: cover;	
+	}
 
-.eighth{
-	background-image: url("../images/hoi_an/hoi_an_lanterns.jpg");	
-	background-size: cover;	
-}
+	.ninth{
+		background-image: url("../images/byron_bay/byron_bay_lighthouse.jpg");
+		background-size: cover;	
+	}
 
-.ninth{
-	background-image: url("../images/siem_reap/siem_reap_ankor_temple.jpg");
-	background-size: cover;	
-}
+	.gradient{
+		position: relative;
+		z-index: -1;
+		width: 100%;
+/*		height: 100%;*/
+	    background-color: black;
+	    }
 
 /*-------------------------------*/
 /*section separator styling starts here*/
-#info-boxes{
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-	color: black;
-	height: 500px;
-	background-color: white
-}
+	#info-boxes{
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		color: black;
+		height: 100%;
+		background-color: white;
+	}
 
-#info-boxes h2{	
-	font-size: 30px;
-	color: black;
-}
+	/*headings e.g. "what to know*/
+	#info-boxes h2{	
+		font-size: 30px;
+		line-height: 120%;
+		color: black;
+		padding-top: 15px;
+		padding-bottom: 10px; 
+		}
 
-#info-boxes h3{
-	font-size: 20px;
-	font-weight: lighter;
-}
-#info-boxes p{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 18px;
-	font-weight: lighter;
-/*	color: #D94086;*/
-}
+	/*quip styling e.g. "what to see"*/
+	#info-boxes h3{
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: teal;
+	}
 
-.first-box{
-	border: 4px white solid;
-	background-color: #89B0AE;
-	transition: background-image 1s;
-	height: 600px;
-/*	transition: margin 1s;*/
-}
+	/*line styling - inhereted from above use*/
+	#info-boxes .line{
+		margin-top: 20px;
+	}
 
-.second-box{
-	background-color: white;
-	padding: 40px;
-	height: 600px;
-	transition: background-image 1s;
-/*	transition: margin 1s;*/
-}
+	#info-boxes p{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 20px;
+		/*line-height: 20px;
+	*/	font-weight: 400;
+		color: black;
+		text-align: justify;
+		line-height: 120%;
+	}
 
-.third-box{
-	background-color: white;
-	border-color: white;
-	height: 600px;
-	transition: background-image 1s;
-/*	transition: margin 1s;*/
-}	
+	#info-boxes li{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 208px;
+		font-weight: lighter;
+		color: black;
+	}
 
-/*pseudoclass for hover*/
-#info-boxes:hover{
-	opacity: 0.9;
-	background-image: 110%;
-}
 
-/*map placeholder text styling*/
-.first-box p{
-	margin: 20px;
-	font: black 20px lighter;
-}
+	/*	---------------*/
+	.first-box{
+		background-color: #89B0AF;
+		border-bottom: white 4px solid;
+	/*	transition: background-image 1s;
+	/*	transition: margin 1s;*/
+	}
 
-/*
-QUESTION: Why is this not centered?*/
-.map-container{
-	margin: auto 0; 
-	display: block;
-	background-color: gray;
-	border: gray 1px solid;
-	height: 200px;
-	line-height: 60px;
-	font-family: 'Oswald', sans-serif;
-	color: light-gray;
-	font-weight: lighter;
-	font-size: 20px
-}
+	.second-box{
+		background-color: #89B0AE;
+		border-bottom: white 4px solid;
+		transition: background-image 1s;
+	/*	transition: margin 1s;*/
+	}
 
-a{
-	font-size: 10px;	
-}
+	.third-box{
+		background-color: #89B0AF;
+		border-bottom: white 4px solid;
+	/*	transition: margin 1s;*/
+	}	
 
-/*QUESTION: how do I make the list sit in the middle?*/
-.second-box #list ol li{
-	text-align: left;
-/*	text-indent-left: auto;
-	text-indent-right: auto;*/
-	font-size: 20px;
+	/*pseudoclass for hover*/
+	#info-boxes:hover{
+		opacity: 0.9;
+		background-image: 110%;
+	}
 
-}
+	/*map placeholder text styling*/
+	.first-box p{
+		margin: 20px;
+		font: black 20px lighter;
+	}
 
-/*gallery styling*/
+	/*
+	QUESTION: Why is this not centered?*/
+	.map-container{
+/*		margin: auto 0;
+		position: center;*/
+		display: block;
+		background-color: transparent;
+		height: 200px;
+		float: none;
+    	margin: 0 auto;
+    	padding-bottom: 30px;
+		}
+
+	#map {
+        height: 100%;
+      }
+
+	a{
+		font-size: 10px;	
+	}
+
+	/*QUESTION: how do I make the list sit in the middle?*/
+	.second-box #list ol li{
+		text-align: left;
+	/*	text-indent-left: auto;
+		text-indent-right: auto;*/
+		font-size: 20px;
+
+	}
+
+
