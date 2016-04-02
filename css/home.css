@@ -1,6 +1,7 @@
 @import('config.css');
 
-/*global elements*/
+/*------------------------*/
+	/*GLOBAL elements*/
 	
 	body{
 		background-color: white;
@@ -9,8 +10,7 @@
 		font-size: 30px;
 	}
 
-/*nav styling*/
-
+	/*nav styling*/
 	nav img{
 		width: 240px;
 
@@ -29,6 +29,7 @@
     	height: 30px;
     	display: block;
 	}
+
 	nav a{
 		text-align: center;
 		float: none;
@@ -38,14 +39,13 @@
     	text-align: center;
 	}
 
-/*	QUESTION: why is the footer separated from the text?
-*/	/*footer styling*/
+	/*footer styling*/
 	footer{
 		font: gray 30px bold;
 		line-height: 30px;
 		text-align: center;
 		text-transform: uppercase;
-/*		background: #d3d3d3;*/
+		/*background: #d3d3d3;*/
 		height: 40px;
 		font-family: 'Oswald', sans-serif;
 	}
@@ -57,22 +57,20 @@
 
 
 /*--------------------------------*/
-/*home-page specific*/
+	/*HOMEPAGE specific*/
 
 	#homepage-body-container{
 		margin: 10px;
 		font-family: 'Oswald', sans-serif;
-/*		background-color: #89B0AE;
-		background-color: gradient;	*/
-/*		background-image: url("../images/background2.jpg")
-		background-size: cover;*/
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8cc2ba+60,ffffff+100 */
-		background: #8cc2ba; /* Old browsers */
+		/* gradient styling via http://colorzilla.com/gradient-editor/#8cc2ba+60,ffffff+100 */
+		background: #8cc2ba;
+		/* Old browsers */
 		background: -moz-linear-gradient(-45deg, #8cc2ba 60%, #ffffff 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(-45deg, #8cc2ba 60%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(135deg, #8cc2ba 60%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc2ba', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}
+	
 	#homepage-body-container h1{
 		font-family: 'Oswald', sans-serif;
 		font-size: 55px;
@@ -86,6 +84,7 @@
 		padding-top: 50px;
 		padding-bottom: 30px;
 	}
+
 	.line {
 		width:90px;
 		height:4px;
@@ -110,13 +109,15 @@
 	}
 
 /*---------------------------*/
-/*div styling for the container of the selector*/
+	/*LOCATIONS start here*/
+
+	/*div styling for the container of the selectors*/
 	#location-selectors{
 		height: 750px;
 		display: block;
 	}
 
-	/*div styling for the location selector boxes*/
+	/*general styling for each location selector boxes*/
 	.location{
 		font-size: 30px;
 		height: 250px;
@@ -131,8 +132,8 @@
 	.location h3{
 		color: white;
 		font-size: 28px;
-	/*	position: absolute;
-		z-index: 1;*/
+		position: relative;
+		z-index: 1;
 	}
 
 	/*country name styling*/
@@ -140,8 +141,8 @@
 		color: #D94086;
 		font-size: 18px;
 		font-weight: bold;
-/*		position: absolute;*/
-/*		z-index: 1;*/
+	/*	position: relative;
+		z-index: 1;*/
 	}
 
 	/*quip of location styling*/
@@ -149,20 +150,42 @@
 		color: white;
 		font-weight: lighter;
 		font-size: 18px;
-/*		position: absolute;*/
-/*		z-index: 1;*/
+		/*position: relative;
+		z-index: 1;*/
 	}
 
-	.location:hover{
-		opacity: 0.8;
+
+	.gradient{
+		position: absolute;
+		top:0;
+		left:0;
+		opacity:0.1;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	    background-color: black;
 	}
 
-/*div styling for the individual location selector boxes*/
+	/*pseudoclass for hover*/
+	.gradient:hover{
+	    opacity:0;
+	}
+		
+	/*.location:hover{
+	}*/
+		
+	/*#info-boxes:hover{
+		/*opacity: 0.3;*/
+		/*background-size: 110%;
+	}*/		
+
+
+	/*individual styling for each location selector box*/
 
 	.first{
 		background-image: url("../images/tulum/tulum_cenote.jpg");
 		background-position: bottom;	
-/*		z-index: -1;
+		/*z-index: -1;
 		position: relative;*/
 	}
 
@@ -181,8 +204,8 @@
 	}
 
 	.fifth{
-		background-image: url("../images/hawaii/hawaii_waipio-valley.jpg");
-		background-position: right;	
+		background-image: url("../images/hawaii/hawaii_waipio-valley.jpg");	
+		background-size: cover;	
 	}
 
 	.sixth{
@@ -204,16 +227,11 @@
 		background-size: cover;	
 	}
 
-	.gradient{
-		position: relative;
-		z-index: -1;
-		width: 100%;
-/*		height: 100%;*/
-	    background-color: black;
-	    }
 
 /*-------------------------------*/
-/*section separator styling starts here*/
+/*OUTPUT INFO starts here*/	
+
+	/*section separator styling starts here*/
 	#info-boxes{
 		text-align: center;
 		font-size: 30px;
@@ -229,7 +247,8 @@
 		line-height: 120%;
 		color: black;
 		padding-top: 15px;
-		padding-bottom: 10px; 
+		padding-bottom: 10px;
+		text-align: center;
 		}
 
 	/*quip styling e.g. "what to see"*/
@@ -239,6 +258,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		color: teal;
+		text-align: center;
 	}
 
 	/*line styling - inhereted from above use*/
@@ -246,87 +266,69 @@
 		margin-top: 20px;
 	}
 
+    /*first info box styling*/
+
 	#info-boxes p{
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 20px;
+		padding-bottom: 30px;
 		font-size: 20px;
 		/*line-height: 20px;
 	*/	font-weight: 400;
 		color: black;
 		text-align: justify;
-		line-height: 120%;
+		line-height: 130%;
 	}
-
-	#info-boxes li{
-		padding-top: 5px;
-		padding-bottom: 5px;
-		font-size: 208px;
-		font-weight: lighter;
-		color: black;
-	}
-
-
-	/*	---------------*/
 	.first-box{
 		background-color: #89B0AF;
 		border-bottom: white 4px solid;
-	/*	transition: background-image 1s;
-	/*	transition: margin 1s;*/
+		/*transition: background-image 1s;
+		/*transition: margin 1s;*/
 	}
 
-	.second-box{
-		background-color: #89B0AE;
-		border-bottom: white 4px solid;
-		transition: background-image 1s;
-	/*	transition: margin 1s;*/
-	}
-
-	.third-box{
-		background-color: #89B0AF;
-		border-bottom: white 4px solid;
-	/*	transition: margin 1s;*/
-	}	
-
-	/*pseudoclass for hover*/
-	#info-boxes:hover{
-		opacity: 0.9;
-		background-image: 110%;
-	}
-
-	/*map placeholder text styling*/
-	.first-box p{
-		margin: 20px;
-		font: black 20px lighter;
-	}
-
-	/*
-	QUESTION: Why is this not centered?*/
 	.map-container{
-/*		margin: auto 0;
-		position: center;*/
 		display: block;
 		background-color: transparent;
 		height: 200px;
 		float: none;
     	margin: 0 auto;
     	padding-bottom: 30px;
-		}
+	}
 
-	#map {
+	#map{
         height: 100%;
-      }
+    
+    }
 
-	a{
-		font-size: 10px;	
+    /*second info box styling*/
+
+	.second-box{
+		background-color: #89B0AE;
+		border-bottom: white 4px solid;
+		transition: background-image 1s;
+		/*transition: margin 1s;*/
+		padding-bottom: 30px;
 	}
 
-	/*QUESTION: how do I make the list sit in the middle?*/
-	.second-box #list ol li{
-		text-align: left;
-	/*	text-indent-left: auto;
-		text-indent-right: auto;*/
+	#info-boxes li{
+		padding-top: 5px;
 		font-size: 20px;
-
+		font-weight: lighter;
+		color: black;
+		text-align: left;
+		list-style: square;
+	    list-style-position: inside;
+    	text-indent: -1em;
+    	padding-left: 1em;
+		font-size: 20px;
 	}
 
+	/*third info box styling*/
 
+	.third-box{
+		background-color: #89B0AF;
+		border-bottom: white 4px solid;
+		height: 100%;
+		/*transition: margin 1s;*/
+		padding: 0;
+		margin: 0;
+	}

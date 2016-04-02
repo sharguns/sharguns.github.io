@@ -45,15 +45,20 @@
             <div class="line"></div>
 			<h2>[ All You Need Is A Destination ]</h2>
 
-			<!-- location-selector boxes start here -->
-			<a href="#anchor">
+            
+            <!-- anchor initiator starts here -->
+            <a href="#contact"></a>
+
+            <!-- location-selector boxes start here -->
 			<div id="location-selectors">
+            
+
 				<section class="first location col-xs-4 col-lg-4">
-					<div class="gradient"></div>
-        			<h3>Tulum</h3>
-        			<h4>Mexico</h4>
-        			<p>Cenotes and Ceviche</p>
-        		</section>
+        		  <h3>Tulum</h3>
+        		  <h4>Mexico</h4>
+        		  <p>Cenotes and Ceviche</p>
+        		  <div class="gradient"></div>
+                </section>
 
         		<section class="second location col-xs-4 col-lg-4">
                     <div class="gradient"></div>
@@ -114,19 +119,20 @@
 			</div>
 			</a>
 
-			<!-- info boxes start here -->			
-			<div id="info-boxes">
-			<a class="anchor"></a>
-				
+			<!-- info boxes start here -->
+
+            <!-- destination of anchor starts here -->
+            <a name="contact"></a> 			
+			<div id="info-boxes">				
                 <!-- location blurb with map goes here -->	
 				<section class="first-box col-xs-12 col-lg-12">
         			<h2>What to Know</h2>
          			<h3>[ The basics to set you on your way ]</h3>
                     <div class="line"></div>
         				<!-- blurb starts here	 -->
-        				<p>Tulum (130km/80 miles from Cancún) is best known for its archaeological site, a walled Maya city of the post-Classic age perched dramatically on a rocky cliff overlooking the Caribbean. The coastline south of the site is packed with palapa hotels and upscale retreats for a well-heeled crowd seeking a "rustic" hideaway.</br>
-                        </br>
-                        This stretch of incredible white beaches has become the unofficial center of the Tulum Hotel Zone -- a collection of about 30 small hotels stretching from the Tulum ruins south to the entrance to the Sian Ka'an Biosphere Reserve.</p>
+        				<p>Best known for its archaeological site, Tulum is a walled Maya city of the post-Classic age perched dramatically on a rocky cliff overlooking the Caribbean. The coastline south of the site is packed with palapa hotels and upscale retreats for a well-heeled crowd seeking a rustic hideaway.</br>
+
+                        </br> This stretch of incredible white beaches has become the unofficial center of the Tulum Hotel Zone -- a collection of about 30 small hotels stretching from the Tulum ruins south to the entrance to the Sian Ka'an Biosphere Reserve.</p>
         				<!-- map section starts here -->
         				<div class="map-container col-centered">
                             <!-- [google map goes here] -->
@@ -140,6 +146,11 @@
         			<h3>[ What to see and do ]</h3>
                     <div class="line"></div>
         			<div id="list">
+                            <li id="list-one">Pay homage to the Mayan Ruins with a bike tour</li>
+                            <li id="list-two">Take a swim in the Cenotes Dos Ojos or Gran Cenote</li>
+                            <li id="list-three">Try the Ceviche and Guacamole at Zamas </li>
+                            <li id="list-four">Yoga by the beach at Maya Tulum</li>
+                            <li id="list-five">Dine at Hartwood or Posada Margherita and have a drink at Casa Jaguar </li>
 
         			<!-- this content needs to be dynamic -->
         			<ol>
@@ -154,13 +165,108 @@
         			<h3>[ That extra push ]</h3>
                     <div class="line"></div>
         			
-        			<!-- gallery starts here -->
-					<div class="fotorama"
-     						data-width="100%"
-     						data-ratio="800/900">
-						<img class="first-image" src="/images/hoi_an/hoi_an_lanterns.jpg">
-                        <img class="first-image" src="/images/hoi_an/hoi_an_lanterns.jpg">	
+        			<!-- gallery for tulum starts here -->
+					<div
+                        class="fotorama"
+                        id="tulum"
+     					data-width="100%"
+     					data-ratio="800/600">
+						<img class="first-image" src="images/tulum/tulum_beach.jpg">
+                        <img class="second-image" src="images/tulum/tulum_beach_huts.jpg">
+                        <img class="second-image" src="images/tulum/tulum_ceviche.jpg">
+                        <img class="fourth-image" src="images/tulum/tulum_ruins.jpg">
+
         			</div>
+
+                    <!-- gallery for hoi an starts here -->
+                    <div
+                        class="fotorama"
+                        id="hoi-an"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/hoi_an/hoi_an_lanterns_village.jpg">
+                        <img class="second-image" src="images/hoi_an/hoi_an_beach.jpg">
+                        <img class="third-image" src="images/hoi_an/hoi_an_cafe.jpg">
+                    </div>
+
+                    <!-- gallery for kerala starts here -->
+                    <div
+                        class="fotorama"
+                        id="kerala"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/kerala/kerala_hills.jpg">
+                        <img class="second-image" src="images/kerala/kerala_beach.jpg">
+                        <img class="third-image" src="images/kerala/kerala_waterways.jpg">
+                    </div>
+
+                    <!-- gallery for siem-reap starts here -->
+                    <div
+                        class="fotorama"
+                        id="siem-reap"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/siem_reap/siem_reap_ankor_watt_temple.jpg">
+                        <img class="second-image" src="images/siem_reap/siem_reap_ankor_watt_temple.jpg">
+                        <img class="third-image" src="images/siem_reap/siem_reap_roots.jpg">
+                    </div>
+
+                    <!-- gallery for hawaii starts here -->
+                    <div
+                        class="fotorama"
+                        id="hawaii"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/hawaii/hawaii_beach.jpg">
+                        <img class="second-image" src="images/hawaii/hawaii_volcano.jpg">
+                        <img class="third-image" src="images/hawaii/hawaii_waterfall.jpg">
+                        <img class="third-image" src="images/hawaii/hawaii_waipio-valley.jpg">
+
+                    </div>
+
+                    <!-- gallery for new-york starts here -->
+                    <div
+                        class="fotorama"
+                        id="new-york"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/nyc/nyc_eastriver.jpg">
+                        <img class="second-image" src="images/nyc/nyc_bridge.jpg">
+                        <img class="third-image" src="images/nyc/nyc_westvillage.jpg">
+                    </div>
+
+                    <!-- gallery for lagos starts here -->
+                    <div
+                        class="fotorama"
+                        id="lagos"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/lagos/lagos_caves.jpg">
+                        <img class="second-image" src="images/lagos/lagos_fish.jpg">
+                        <img class="third-image" src="images/lagos/lagos_cliffs.jpg">
+                    </div>
+
+                    <!-- gallery for barbados starts here -->
+                    <div
+                        class="fotorama"
+                        id="barbados"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/barbados/barbados_beach.jpg">
+                        <img class="second-image" src="images/barbados/barbados_mountgay_rum.jpg">
+                        <img class="third-image" src="images/barbados/barbados_vantage.jpg">
+                    </div>
+
+                    <!-- gallery for byron-bay starts here -->
+                    <div
+                        class="fotorama"
+                        id="byron-bay"
+                        data-width="100%"
+                        data-ratio="800/600">
+                        <img class="first-image" src="images/byron_bay/byron_bay_lighthouse.jpg">
+                        <img class="second-image" src="images/byron_bay/byron_surf.jpg">
+                        <img class="third-image" src="images/byron_bay/byron_bay_yoga.jpg">
+                    </div>
 
         		</section>
 			
@@ -177,7 +283,7 @@
 		<!-- global footer ends here -->
 
 	</div>
-	
+
 	<!-- jQuery script starts here -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -191,7 +297,7 @@
     async defer></script>
 
     <!--smooth scroll here --- -->
-    // <!-- <script src="js/jquery.smooth-scroll.js"></script> -->
+    <!-- <script src="js/jquery.smooth-scroll.js"></script> -->
 	<script src="js/script.js"></script>
 	<!-- javascript ends here -->
 
