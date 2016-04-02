@@ -14,8 +14,8 @@ $("#byron-bay").hide();
 });
 
 // smoothScroll.init();
-// $("#scroll").smoothScroll();
 
+// $("#scroll").smoothScroll();
 
 // default map (tulum)
 var map;
